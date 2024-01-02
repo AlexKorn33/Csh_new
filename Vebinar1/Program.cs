@@ -36,9 +36,28 @@ Console.WriteLine(n + 10);
 //     i+= 1; //i = i + 1;
 // }
 
+// Console.Clear();
+// Console.Write("Введите число:");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int n1 = n / 100; //456 / 100 -> 4(56 ost) = 4
+// int n3 = n % 10; //456 % -> 45(6 ost) = 6
+// Console.WriteLine(n1 + n3);
+
+
+
 Console.Clear();
 Console.Write("Введите число:");
-int n = Convert.ToInt32(Console.ReadLine());
-int n1 = n / 100; //456 / 100 -> 4(56 ost) = 4
-int n3 = n % 10; //456 % -> 45(6 ost) = 6
-Console.WriteLine(n1 + n3);
+int a = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите число:");
+int b = Convert.ToInt32(Console.ReadLine());
+if (a > b)
+    {
+    Console.WriteLine("первое число больше");
+    }
+else if (a < b)
+    {
+    Console.WriteLine("второе число больше");
+    }
+else {
+    Console.WriteLine("числа равны");
+}
