@@ -45,19 +45,38 @@ Console.WriteLine(n + 10);
 
 
 
+// Console.Clear();
+// Console.Write("Введите число:");
+// int a = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите число:");
+// int b = Convert.ToInt32(Console.ReadLine());
+// if (a > b)
+//     {
+//     Console.WriteLine("первое число больше");
+//     }
+// else if (a < b)
+//     {
+//     Console.WriteLine("второе число больше");
+//     }
+// else {
+//     Console.WriteLine("числа равны");
+// }
+
 Console.Clear();
 Console.Write("Введите число:");
 int a = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите число:");
 int b = Convert.ToInt32(Console.ReadLine());
-if (a > b)
-    {
-    Console.WriteLine("первое число больше");
-    }
-else if (a < b)
-    {
-    Console.WriteLine("второе число больше");
-    }
-else {
-    Console.WriteLine("числа равны");
+Console.Write("Введите число:");
+int c = Convert.ToInt32(Console.ReadLine());
+int max = a;
+
+if (b > max)
+{
+    max = b;
 }
+if(c > max)
+{
+    max = c;
+}
+Console.WriteLine(max);
